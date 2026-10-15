@@ -109,21 +109,5 @@ JWT con roles (lector y administrador), `helmet` para encabezados seguros, lími
 | `LECTOR_PASSWORD` | Contraseña del usuario `lector` |
 | `CORS_ORIGIN` | Sitio autorizado para consumir la API (por defecto `*`) |
 
-## Ejecución local
 
-```bash
-npm install
-npm start
-```
 
-El servicio queda disponible en `http://localhost:3000`.
-
-## Despliegue en Render
-
-1. Subir el proyecto a GitHub (rama `main`).
-2. En Render: **New → Web Service**, elegir el repositorio.
-3. Runtime: **Node**. Build Command: `npm install`. Start Command: `node server.js`.
-4. Instance Type: **Free**.
-5. Agregar las variables de entorno y presionar **Deploy Web Service**.
-
-> Nota: los datos se guardan en memoria, por lo que se reinician cuando el servicio se reinicia o se suspende por inactividad (plan gratuito).
